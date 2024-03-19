@@ -1,0 +1,41 @@
+.text-24 {
+  font-size: 24px;
+}
+
+.text-72 {
+  font-size: 72px;
+}
+
+.text-600 {
+  font-size: 600px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.text-27 {
+  font-size: 27px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-200 {
+  font-size: 200px;
+}
+
+@media only screen and (max-width: $lg) {
+  .text-72 {
+    font-size: 18px;
+  }
+
+  .text-600 {
+    font-size: 42px;
+  }
+
+  .text-36 {
+    font-size: 18px;
+  }
+}

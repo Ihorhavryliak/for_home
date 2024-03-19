@@ -1,0 +1,50 @@
+.w-438 {
+  width: 438px;
+}
+
+.w-32 {
+  width: 32px;
+}
+
+.min-w-360 {
+  min-width: 360px
+}
+
+
+.max-w-999 {
+  max-width: 996px;
+}
+
+.max-w-482 {
+  max-width: 482px;
+}
+
+.max-w-489 {
+  max-width: 489px;
+}
+
+.max-w-275 {
+  max-width: 275px;
+}
+
+.max-w-1132 {
+  max-width: 1132px;
+}
+
+.max-w-360 {
+  max-width: 360px;
+}
+
+.max-w-556 {
+  max-width: 556px;
+}
+
+@media only screen and (max-width: $lg) {
+  .min-w-360 {
+    min-width: 100%;
+  }
+
+  .max-w-360 {
+    max-width: 100%;
+  }
+}

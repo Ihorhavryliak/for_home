@@ -1,95 +1,45 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Footer from "@/components/Footer/Footer";
+import SectionAboutBusiness from "@/components/Section/SectionAboutBusiness/SectionSectionAboutBusiness";
+import SectionCard from "@/components/Section/SectionCard/SectionCard";
+import SectionContact from "@/components/Section/SectionContact/SectionContact";
+import SectionInform from "@/components/Section/SectionInform/SectionInform";
+import SectionNumber from "@/components/Section/SectionNumber/SectionNumber";
 
-export default function Home() {
+
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="">
+      <SectionInform />
+      <div className="-mt-328 -mb-468 h-708 hidden">
+        <div className="position-relative -top-131">
+          <SectionNumber description="Branding, Interactive" number="01" textTitle="Reykjavik Fashion Festival —" />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <SectionAboutBusiness />
+
+      <div className="-mt-398 -mb-268 h-708  hidden">
+        <div className="position-relative -top-131">
+          <SectionNumber
+            description="User Experience, User Interface"
+            number="02"
+            textTitle="B&O Plan —"
+            isReverse={true}
+          />
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <SectionCard />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="-mt-329 -mb-415">
+        <div className="position-relative">
+          <SectionNumber description="Brand Strategy, Visual Identity" number="03" textTitle="Girls Globe —" />
+        </div>
       </div>
+
+      <SectionContact />
+      <Footer />
     </main>
   );
-}
+};
+export default Home;

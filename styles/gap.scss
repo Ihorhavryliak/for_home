@@ -1,0 +1,21 @@
+.gap-47 {
+  gap: 47px;
+}
+
+.gap-26 {
+  gap: 26px;
+}
+
+.gap-109 {
+  gap: 109px;
+}
+
+.gap-101 {
+  gap: 101px;
+}
+
+@media only screen and (max-width: $lg) {
+  .gap-109 {
+    gap: 0;
+  }
+}

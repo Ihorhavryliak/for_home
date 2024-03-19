@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/bootstrap';
+@import './screen.scss';
+@import './fontSize.scss';
+@import './color.scss';
+@import './margin.scss';
+@import './padding.scss';
+@import './backgroundColor.scss';
+@import './top.scss';
+@import './height.scss';
+@import './width.scss';
+@import './line.scss';
+@import './gap.scss';
+@import './border.scss';
+@import './borderColor.scss';
+@import './shadow.scss';
+@import './borderRadios.scss';
+@import './zIndex.scss';
+
+@media only screen and (max-width: $lg) {
+  .d-flex {
+    flex-direction: column !important;
+  }
+
+  .text-cut-5 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+  }
+
+  .card-box {
+    padding-bottom: 200px
+  }
+
+  .contact {
+    display: flex;
+    position: relative;
+    top: -258px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line-info {
+    width: 100%;
+  }
+
+}
+
+.container-max {
+  max-width: 1920px;
+}
+
+.text-cut-3 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+
+.card-hover:hover .card-hover-button {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.hidden {
+  overflow: hidden;
+}
